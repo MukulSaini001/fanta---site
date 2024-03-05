@@ -1,0 +1,243 @@
+@font-face {
+    font-family: product;
+    src: url(./Product\ Sans\ Regular.ttf);
+}
+@font-face {
+    font-family: product-bold;
+    src: url(./Product\ Sans\ Bold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'product sans';
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(120deg,rgb(255, 136, 0), rgb(255, 81, 0));
+    /* overflow:hidden ; */
+}
+nav{
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10vh;
+    z-index: 99;
+}
+nav a{
+    font-size: 1.5vw;
+    font-family: product ;
+    text-decoration: none;
+    color: #fff;
+}
+nav i{
+    color: #fff;
+    font-size: 2.2vw;
+    cursor: pointer;
+}
+.nav-center{
+    display: flex;
+    gap: 2.2vw;
+}
+.page1{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(120deg,rgb(255, 136, 0), rgb(255, 81, 0));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page1 h1{
+    margin-top: 10vh;
+    text-transform: uppercase;
+    font-size: 22vw;
+    color: #fff;
+}
+.fanta{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    width: 40%;
+    z-index: 2;
+    /* transition: all cubic-bezier(0.19, 1, 0.22, 1).5s; */
+}
+.orange-cut{
+    position: absolute;
+    width: 20%;
+    top: 10%;
+    left: 31%;
+    z-index: 1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1).5s;
+
+}
+.leaf{
+    transform: rotate(106deg);
+    width: 16%;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    z-index: 1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1).5s;
+
+}
+.orange{
+    width: 18%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    z-index: 3;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1).5s;
+
+}
+.leaf2{
+    width: 20%;
+    position: absolute;
+    top: 0%;
+    right: 0;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1).5s;
+
+}
+.leaf3{
+    transform: rotate(-10deg);
+    width: 18%;
+    position: absolute;
+    top: 67%;
+    right: 6%;
+    z-index: 1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1).5s;
+
+}
+.page2{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(114, 0, 0);
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.left-page2 {
+    width: 50%;
+    height: 100%;
+    /* background-color: yellow; */
+}
+.left-page2 svg{
+    width: 30%;
+    position: absolute;
+    bottom: 0%;
+    left: 10%;
+}
+.right-page2 {
+    width: 50%;
+    height: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.right-page2 h1{
+    font-size: 6vw;
+    text-transform: uppercase;
+    font-family: product ;
+    color: #fff;
+    margin-top: 30vh;
+}
+.right-page2 p{
+    width: 75%;
+    color: #fff;
+}
+.page3{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(77, 4, 4);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 4vw;
+}
+.card{
+    position: relative;
+    width: 22vw;
+    height: 65%;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1vw;
+    margin-bottom: 5vh;
+}
+.card h1{
+    font-family: product;
+    text-transform: uppercase;
+    color: #fff;
+}
+.card button{
+    padding: 1vw 5vw;
+    border-radius: 50px;
+    margin-bottom: 3vh;
+    border: none;
+    transition: all .2s ;
+}
+.card button:hover{
+    background-color: #bdbdbd;
+    cursor: pointer;
+}
+.sp-card{
+    background-color: #2fc96a;
+}
+#sprite{
+    position: absolute;
+    width: 27vw;
+    top: -18%;
+    left: 50%;
+    transform: translate( -50%, 0% );
+    z-index: 1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1).5s;
+}
+.lemon{
+    position: absolute;
+    width: 28vw;
+    top: -35%;
+    left: 50%;
+    transform: translate(-50% ,0%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1).5s;
+
+}
+
+.fanta-card{
+    background-color: #e5813e;
+}
+
+
+.pepsi-card{
+    background-color: #2571c2;
+}
+.pep-lemon{
+    position: absolute;
+    width: 28vw;
+    top: -35%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1).5s;
+
+}
+#pepsi{
+    width: 20vw;
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    transform: translate(-50%, 0) ;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1).5s;
+}
+
+
