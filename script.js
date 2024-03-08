@@ -20,6 +20,7 @@ tl.to('.orange',{
 tl.to('.orange-cut',{
     top:'160%',
     left:'26%',
+    width:'20%',
 },'eksaath')
 tl.to('.leaf',{
     width:'15%',
